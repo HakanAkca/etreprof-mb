@@ -1,0 +1,17 @@
+$tilt-transition : all 0.5s ease;
+$tilt-hover : rotate(7deg) scale(1.1);
+.tilt {
+  -webkit-transition: $tilt-transition;
+     -moz-transition: $tilt-transition;
+       -o-transition: $tilt-transition;
+      -ms-transition: $tilt-transition;
+          transition: $tilt-transition;
+
+      &:hover {
+	  	-webkit-transform: $tilt-hover;
+	     -moz-transform: $tilt-hover;
+       	 -o-transform: $tilt-hover;
+      	 -ms-transform: $tilt-hover;
+          transform: $tilt-hover;
+	  }
+}

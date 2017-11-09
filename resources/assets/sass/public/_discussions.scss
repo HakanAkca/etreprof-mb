@@ -1,0 +1,75 @@
+.badge.badge-danger {
+	background: #ff3e69;
+    color: #fff;
+}
+
+.scrollable {
+	overflow-x: hidden;
+    overflow-y: scroll;
+    border-right: .25rem solid transparent;
+}
+
+#discussion-container {
+	overflow-y: hidden;
+}
+.discussion {
+
+	.ligne {
+		clear:both;
+		width:90%;
+
+		.bulle {
+			padding: 6px 14px;
+		    border-radius: 4px;
+		    max-width: 80%;
+		    margin: 3px 0;
+
+		    p {
+		    	margin:0;
+		    }
+		}
+
+		.date {
+			/*clear:both;*/
+			color:lighten($gris, 32%);
+			font-size:0.8em;
+			padding:6px 14px;
+		}
+		.from {
+			display: block;
+		    width: 10%;
+		    min-width:60px;
+		}
+
+		&.left {
+			float:left;
+
+			.bulle, .from, .thumb, .date{
+				float:left;
+			}
+
+			.bulle {
+				background:$grisclair;
+			}
+		}
+
+		&.right {
+			float:right;
+			text-align:right;
+
+			.bulle, .from, .thumb, .date{
+				float:right;
+			}
+
+			.thumb {
+				background-color:$violet;
+			}
+
+			.bulle {
+				background:$violet;
+				color:#fff;
+				font-weight:bold;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+/* hide input */
+input[type="radio"] {
+	min-width:18px;
+	min-height:18px;
+}
+
+.form-image {
+	img {
+		max-height: 170px;
+	}
+}
+
+input[type="radio"] + span,input[type="checkbox"] + span {
+  /*display:inline-block;*/
+  padding:5px;
+}
+
+:checked + span {
+	background:lighten($bleu,20%);
+  
+}

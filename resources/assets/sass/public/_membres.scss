@@ -1,0 +1,43 @@
+.thumb {
+			background-size:cover;
+			border-radius:50%;
+			width:50px;
+			height:50px;
+		}
+
+.membres {
+
+	display:table;
+
+	.item {	
+		background:lighten($grisclair,3%);
+		display:table-cell;
+		text-align:center;
+		border: 15px solid white;
+
+		.thumb {
+			height:150px;
+			width:150px;
+			margin:5px auto;
+		}
+	}
+}
+
+#vuemembre {
+	.thumb {
+		width:250px;
+		height:250px;
+	}
+	.thumbnail {
+		margin: 0 20px 20px 0;
+	}
+}
+
+#profil {
+	.avatar{
+		margin: 15px auto;
+		height: 250px;
+		width: 250px;
+		background-size: cover
+	}
+}

@@ -1,0 +1,394 @@
+
+/**
+ * Default SCSS style template.
+ */
+.clearBoth,#content {
+	clear:both;
+}
+
+.mirror {
+	transform: scaleX(-1);
+}
+
+img,iframe {
+	max-width:100%;
+}
+
+#logo {
+	
+	margin-right:30px;
+	@media screen and (max-width:991px) {
+		text-align:center;
+		img {
+			height: 90px;
+			margin:0 auto;
+		}
+	}
+	@media screen and (min-width:768px) {
+		float:left;
+		height: 62px;
+		max-width:160px;
+	}
+}
+.cols3 {
+	column-count:3;
+}
+.page-header, .navbar-brand, .navbar {
+	margin: 0;
+	padding:0;
+	border:0;
+}
+.page-header {
+	max-width:1200px;
+	margin: 0 auto;
+}
+
+h2 p {
+	margin:0;
+}
+
+#identite {
+	background: $gris;
+    border-radius: 0 0 5px 6px;
+    padding: 0 13px 5px;
+    @media screen and (min-width:768px) {
+		float:right;
+		   margin-bottom: 12px;
+	}
+    a {
+    	color:#fff;
+    }
+}
+
+
+.jumbotron {
+	background:#fff;
+	p {
+			font-size:33px;
+			margin:0;
+	}
+	&.recherche {		
+		background:#fff url(/img/femme-ecrivant.jpg) no-repeat 0px 76%;
+		//background:linear-gradient(rgba(255, 255, 255, 0), rgba(124, 64, 230, 0.7)) no-repeat border-box, #fff url(/img/femme-ecrivant.jpg) no-repeat 0px 76%;
+		background: linear-gradient(rgb(255, 255, 255), rgb(124, 64, 230)) no-repeat border-box, #fff url(/img/femme-ecrivant.jpg) no-repeat 0px 76%;
+		background-blend-mode: multiply;
+
+		background-size:cover;
+		color:#fff;
+	}
+	&.missions {
+		margin-top:20px;
+
+		.item {
+			text-align:center;
+		}
+	}
+	button {
+	 font-size:24px;
+	 margin-top:0;
+	 padding:0;
+	}
+}
+
+.home .jumbotron {
+	h1 {
+		//font-family: 'KGSecondChancesSolid', cursive;
+		padding: 4% 0;
+    	font-size: 55px;
+	}
+
+	h4,button {
+	 font-size:24px;
+	 margin-top:0;
+	}
+	button.btn {
+		padding:0;
+	}
+	input {
+		font-size:20px;
+		padding:2px 10px;
+
+		
+	}
+}
+
+.bloc-carre {
+	min-height:170px;
+	margin: 15px;
+	position:relative;
+	background-color:#f5f5f5;
+	box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+
+	.show-on-hover {
+		height:0;
+		overflow:hidden;
+		transition : height 0.4s ease-in;
+		line-height:1.2;
+	}
+	&:hover {
+		.show-on-hover {
+			height:auto;
+		}
+		.bloc-titre {
+			height:100%;
+			overflow:hidden;
+			background: $gris;
+			color:#fff;
+
+			h3 {
+				margin: 10px 0;
+				color: #fff;
+				
+			}
+		}
+	}
+	.bloc-titre {
+		position:absolute;
+		bottom:0;
+		padding:5px 7px;
+		width:100%;
+		min-height:4.4em;
+		box-sizing:border-box;
+		background:rgba(245,245,245,0.99);
+		transition : all 0.4s ease-in;
+
+		h3 {
+			font-weight: normal;
+			font-size:16px;
+			color:$gris;
+			margin:0;
+			font-family: 'Lato', sans-serif;
+		}
+		a {
+			color:$violet;
+		}
+
+	}
+}
+.player-image {
+	background-image: radial-gradient( white, #dfdfdf );
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	max-width: 100%;
+	margin-bottom:6px;
+
+ 	a.btn {
+		margin-top: 20%;
+	    font-family: titre2;
+    	text-transform: uppercase;
+	    font-size: 41px;
+	    box-shadow: 0px 0px 25px 0px rgba(250,250,250,1);
+	    padding: 24px;
+
+	    }
+}
+
+.cats {
+	margin:0;
+	padding:0;
+
+	li {
+		display:inline;
+		a {
+			display:inline-block;
+			background: $gris;
+			color:#fff;
+			padding:5px 10px;
+			margin:0 0px  3px 0;
+			transition: all 0.5s ease-out;
+
+			&:hover {
+				background: $brand-primary;
+				text-decoration:none;
+				transform:scale(1.2);
+			}
+		}
+	}
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+$stars-height : 22px;
+$stars-width : 111px;
+$stars-small-height : 15px;
+$stars-small-width : 71px;
+
+.stars {
+	background: transparent url('/img/star-off.png') repeat-x top left;
+	height:$stars-height;
+	width:$stars-width;
+	background-size:contain;
+
+	.stars-on {
+		height:$stars-height;
+		background: transparent url('/img/star-on.png') repeat-x top left;
+		background-size:contain;
+	}
+
+
+	&.stars-small {
+		height:$stars-small-height;
+		width:$stars-small-width;
+		margin: 5px;
+
+		.stars-on {
+		height:$stars-small-height;
+		}
+	}
+
+}
+#menu-principal {
+	clear:right;
+	li a {
+		color: $gris;
+
+		&:hover {
+			color:$bleu;
+		}
+	}
+
+}
+
+.menu-haut {
+	margin:0;
+	padding:0;
+
+	li {
+    	display: inline-block;
+    	text-transform: uppercase;
+
+    	&.active a {
+			color: $gris;
+		}
+
+    	a {
+    		&:hover {
+			color: $gris;
+			text-decoration:none;
+			}
+
+		}
+
+		&:after {
+			content: ' | ';
+			color: lighten($gris,60%);
+			margin: 0 10px;
+		}
+		&:last-child:after{
+			content: '';
+			margin:inherit;
+		}
+	}
+}
+
+h1.page-title {
+	color: $violet;
+	text-align:center;
+    /*font-weight: bold;*/
+}
+
+.dossier-une {
+	margin:30px 0;
+
+
+	.body {
+		min-height:170px;
+		position:relative;
+		display:block;
+		background-size:cover;
+		transition:background 0.5s ease-out;
+
+		.title {
+			position:absolute;
+			bottom:0;
+			padding: 0 15px;
+			color:#fff;
+		}
+	}
+
+	&:hover {
+		.body {
+			background:$gris !important;
+		}
+	}
+}
+
+#footer {
+	background: rgba(124, 64, 230, 0.05);
+    padding: 40px 0 40px;
+    margin-top: 20px;
+    #footer-col1 {
+    	img {
+    		max-width:140px;
+    		height:auto;
+    	}
+    }
+    #footer-col3 {
+    	@media screen and (max-width:991px) {
+		clear: left;
+		}
+    }
+}
+
+.bouton-editer {
+	position:relative;
+	.show-hover {
+		display:none;
+		font-family: $font-family-sans-serif;
+		font-size : $font-size-base;
+	}
+	opacity:0.3;
+	&:hover {
+		opacity:1;
+
+		.show-hover {
+			display:inline;
+		}
+	}
+	a {
+		position:absolute;
+		z-index:1000;
+		right : 0;
+	}
+}
+
+#criteres {
+	label {
+		display:block;
+	}
+	.select2-container {
+		width:100% !important;
+	}
+}
+#feedback-button-container {
+    background-color: #000;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    height: 148px;
+    white-space: nowrap;
+    padding-top: 105px;
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+    top: 40%;
+    width: 31px;
+    z-index: 1000;
+
+    #feedback-button {
+	    margin-bottom: 9px;
+	    -webkit-transform: rotate(270deg);
+	    transform: rotate(270deg);
+
+	    .glyphicon {
+	    	display:inline;
+	    }
+    }
+}

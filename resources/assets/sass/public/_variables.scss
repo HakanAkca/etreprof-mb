@@ -1,0 +1,77 @@
+$violet : #7c40e6;
+$orange : rgb(246, 140, 21);
+$bleu : rgb(64, 200, 230);
+$gris : rgb(100, 100, 100);
+$grisclair : #eee;
+
+// Body
+$body-bg: #fff;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+//$brand-primary: #1f1f40;
+$brand-primary: $bleu;
+//$brand-info: #8eb4cb;
+$brand-info: $violet;
+$brand-success: #2ab27b;
+$brand-warning: $orange;
+$brand-danger: #bf5329;
+.text-white {
+	color: #fff;
+}
+.text-gris {
+	color: $gris;
+}
+.text-bleu {
+	color : $bleu;
+}
+.text-violet {
+	color:  $violet;
+}
+.text-orange {
+	color: $orange;
+}
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans-serif: "Lato", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #222;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// SIDEBAR
+$admin-sidebar-bg: darken($brand-primary,20%);
+$admin-sidebar-link-color: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+$border-radius-base:        2px !default;
+$border-radius-large:       3px !default;
+$border-radius-small:       1px !default;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 70%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+$panel-info-border: $violet;
+$panel-info-heading-bg: $violet;
+$panel-info-text: #fff;
+
+// Labels
+$label-default-bg : #f7f7f7;
+
+// Jumbotron
+$jumbotron-bg:#fff;
+$jumbotron-padding:15px;

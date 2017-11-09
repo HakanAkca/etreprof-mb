@@ -1,0 +1,12 @@
+Pour npm sur Vagrant (windows), utiliser :
+sudo npm install --no-bin-links
+
+A l'installation sur Vagrant, si node-sass ne s'installe pas, c'est qu'il faut exécuter install.js :
+npm update
+npm install --no-bin-links
+nodejs node_modules/node-sass/scripts/install.js
+npm rebuild node-sass --no-bin-links
+
+CROSS ENV 
+-> l'installer globalement 
+sudo npm install cross-env -g --no-bin-links
